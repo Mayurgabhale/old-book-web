@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+html{
+    overflow-x: hiddend;
+}
+
+
+@keyframes fadeIn {
+    0%{
+        transform: translate(1rem);
+        opacity: .2s;
+    }
+}
+
+
+.add_products form{
+    /* background-color: aqua; */
+    border-radius: .5rem;
+    padding: 2rem;
+    border: 1px solid black;
+    max-width:400px;
+    margin: 0 auto;
+}
+
+.add_products form h3{
+    font-size: 2rem;
+    color: rgb(14, 96, 178);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+.add_products form .box{
+    width: 100%;
+    background-color: rgb(213, 220, 223);
+    border-radius: 4px;
+    margin: 1rem 0;
+    /* padding: 1rem 1rem; */
+    padding: 12px 5px;
+    color: black;
+    font-size: 15px;
+    border: 1px solid black;
+}
+
+.option-btn{
+    padding: 8px 25px;
+    border: 1px solid black;
+    margin: 0 3px;
+    background-color: rgba(48, 231, 81, 0.875);
+    font-size: 20px;
+
+}
+
+.delete-btn{
+    padding: 8px 25px;
+    border: 1px solid black;
+    margin: 0 3px;
+background-color: rgba(0, 255, 255, 0.749);
+font-size: 20px;
+}
+
+.empty{
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid black;
+    color: red;
+    font-size: 2rem;
+}
+.show-products{
+padding-top: 0;
+margin-top: 50px;
+}
+
+.show-products .box-container{
+    display:grid ;
+    grid-template-columns: repeat(auto-fit,18rem);
+    justify-content: center;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+
+}
+.show-products .box-container .box{
+text-align: center;
+padding: 1rem 2rem;
+border-radius: 5px;
+border: 1px solid black;
+}
+.show-products .box-container .box img{
+    height: 17rem;
+}
+
+.show-products .box-container .box .name{
+/* padding: 5px 0; */
+font-size: 25px;
+color: rgb(14, 133, 176);
+}
+.show-products .box-container .box .price{
+padding: 15px 0;
+font-size: 20px;
+}
+
+.edit-product-form{
+    min-height: 100vh;
+    background-color: rgba(0,0,0,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:2rem;
+    overflow-y: scroll;
+    position: fixed;
+    top:0; left:0; 
+    z-index: 1200;
+    width: 100%;
+ }
+ 
+
+ .edit-product-form form{
+    width: 25rem;
+    padding:1rem;
+    text-align: center;
+    border-radius: .5rem;
+    background-color: white;
+ }
+ 
+.edit-product-form form img{
+    height: 15rem;
+    margin-bottom: 1rem;
+ }
+ 
+ .edit-product-form form .box{
+    margin:10px 0;
+    padding:10px 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: var(--light-bg);
+    font-size: 1rem;
+    color:var(--black);
+    width: 90%;
+ }

@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.orders .box-container{
+display: flex;
+grid-template-columns: repeat(auto-fit, 20rem);
+justify-content: center;
+gap: 1.5rem;
+max-width: 1200px;
+margin: 0 auto;
+align-items: flex-start;
+}
+
+.orders .box-container .box{
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+.orders .box-container .box p{
+padding-bottom: 1rem;
+font-size: 20px;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+
+}
+
+.orders .box-container .box p span{
+    color: rgb(31, 125, 175);
+}
+
+.orders .box-container .box form select{
+    width: 100%;
+    background-color: rgb(224, 227, 224);
+    border: 1px solid black;
+    padding: .7rem 1.2rem;
+    color: black;
+}
+.option-btn{
+    border: 1px solid black;
+
+    padding: .6rem 2rem;
+   
+    background-color: rgb(154, 214, 64);
+    margin: 14px 50px;
+}
+
+.delete-btn{
+    border: 1px solid black;
+    padding: .6rem 2rem;
+    background-color: rgb(61, 147, 218);
+    color: black;
+    margin: 14px 0px;
+
+
+}
